@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dfc3e7c853.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo1.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Data Scientist</p>
+                <h1>Hi, I'm <span>Neha</span> <br>
+                    from India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ........About........ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am interested in working in a challenging 
+                        and dynamic environment where I use my
+                        skills and knowledge to explore new things 
+                        with my team practically. I have a positive 
+                        approach toward life that help me achieve 
+                        all my targets.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')"> skills</p>
+                        <p class="tab-links" onclick="opentab('Achievement')"> Achievement</p>
+                        <p class="tab-links" onclick="opentab('Education')"> Education</p>
+                    </div>
+                    <div class="tab-contents active-tab " id="skills">
+                        <ul>
+                            <li><span>C++</span></li>
+                            <li><span>HTML/CSS/JAVASCRIPT</span></li>
+                            <li><span>MYSQL</span></li>
+                            <li><span>EXCEL</span></li>
+                            <li><span>DATA STRUCTURE</span></li>
+
+                        </ul>
+                    </div>
+
+                    <!-- ............work........... -->
+                    <div class="tab-contents" id="Achievement">
+                        <ul>
+                            <li><span>2023</span><br>CyberShikshaa Fundamentals(By Quick Heal Academy)</li>
+
+                            <li><span>2022</span><br>CISCO Certified Networking Essential (CCNP)</li>
+                            <li><span>2022</span><br>DSA Self Paced Course (By GFG)</li>
+
+                        </ul>
+                    </div>
+
+
+                    <!-- ..........Education........... -->
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2024</span><br>Lovely Professional University</li>
+
+                            <li><span>2020</span><br>D.A.V Public School Alampur</li>
+                            <li><span>2018</span><br>D.A.V Public School Alampur</li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ..........services......... -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Offer you advice on how to create a website that works effectively for your company or product, as well as an optimised and intrusive user interface.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-file-excel"></i>
+                    <h2>Data Analysis</h2>
+                    <p>Using Tableau and Excel, analyse data, alter it, and put it into an intelligible format to help you draw quick conclusions about your data set.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <!-- <div>
+                    <i class="fa-brands fa-apple"></i>
+                    <h2> dfghjk design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum nemo nostrum labore asperiores eveniet deserunt voluptatum nobis, molestiae est! Deleniti ab nemo deserunt maxime voluptas officia ipsam repellat aut odit.</p>
+                    <a href="#">Learn more</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ..........portfolio......... -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png">
+                    <div class="layer">
+                        <h3>Translater App</h3>
+                        <p>a multilingual translator application To translate something into another language, enter a language.</p>
+                        <a href="https://6431a2d70ce99352bbe4ec69--glittery-dodol-ffca8c.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png">
+                    <div class="layer">
+                        <h3>music App</h3>
+                        <p>This music player will have all the features that are often found in a music player. Songs can be played, paused, added, searched for, and played again.</p>
+                        <a href="https://n-e-ha.github.io/Music-app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png">
+                    <div class="layer">
+                        <h3>Professional Portfolio</h3>
+                        <p>All about me on a single page created using Front-End web technologies</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+
+<!-- ...............contact.............. -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>neha495753@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>7018875741</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/_n_e_h._a._/?next=%2F&hl=en-gb"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/neha-p123/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="7018875741"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://github.com/N-e-ha"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="my-cv.pdf"  download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+                
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright Neha. made with <i class="fa-solid fa-heart"></i> by Easy tutorial</p>
+    </div>
+</div>
+
+
+    <script>
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+// define open tab
+//this will hide written part in skills when we click on it
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    //display the rest written part
+    event.currentTarget.classList.add("active-link")
+    document.getElementById(tabname).classList.add("active-tab")
+
+}
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyLooKDMclxHg0IRtT0pcrHO7ipIAsabL4sg_S9ES1snYG4xy-7XbkqcvYaYBtqrpVx1w/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML= "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML= ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>
